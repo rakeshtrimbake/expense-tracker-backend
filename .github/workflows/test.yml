@@ -24,10 +24,11 @@ jobs:
       - name: Run tests
         run: npm test
 
-  deploy:
-    needs: build
+  deployment:
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'  # Adjust branch name as needed
+    environment: production
+    steps:
+      - name: deploy
 
     steps:
       - name: Checkout code
