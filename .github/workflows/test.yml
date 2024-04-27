@@ -27,7 +27,7 @@ jobs:
   deploy:
     needs: build
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/main'  # Adjust branch name as needed
+    if: github.ref == 'refs/heads/master'  # Adjust branch name as needed
 
     steps:
       - name: Checkout code
