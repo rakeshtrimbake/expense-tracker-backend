@@ -15,7 +15,7 @@ describe('Math functions', () => {
 
   describe('subtract', () => {
     it('should subtract two numbers correctly', () => {
-      expect(subtract(5, 32)).toBe(2);
+      expect(subtract(5, 3)).toBe(2);
     });
 
     it('should return the same number when subtracting zero', () => {
